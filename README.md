@@ -1,7 +1,7 @@
 ![masterhead](https://1.bp.blogspot.com/-7A4WynwLsMw/XbBpCXG8fHI/AAAAAAAAMt4/uOa1bpLskYgrwGbllhSu2SDj_Mig8SXJQCLcBGAsYHQ/s1600/2000_600px.gif)
 
 <h1 align="center">Hi 👋, I'm Olusegun Emmanuel</h1>
-<h3 align="center">A Passionate Software Developer</h3>
+<h3 align="center">Full Stack Developer</h3>
 
 <img align="center" alt="coding" width="300" src="https://cdn.dribbble.com/users/2131993/screenshots/4948736/media/421d4ed2f3d23c73d64d20963f61f422.gif">
 
