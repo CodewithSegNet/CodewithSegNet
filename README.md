@@ -13,7 +13,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=codewithsegnet" alt="codewithsegnet" /></a> </p>
 
-<p align="left"> <a href="https://twitter.com/_segunemmanuel_" target="blank"><img src="https://img.shields.io/twitter/follow/_segunemmanuel_?logo=twitter&style=for-the-badge" alt="_segunemmanuel_" /></a> </p>
+
 
 - 👨🏾‍💻 I’m currently working on **Alx Software Engineer Program**
 
