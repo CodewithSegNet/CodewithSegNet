@@ -5,7 +5,7 @@
 <h3 align="center">I’m Full Stack Developer</h3>
 
 <br>
-<p align=”center”>I’m looking forward to connect and work with other developers. Feel free to contact me via any of my social’s below or send a request. </p>
+<p align=”center”>I’m looking forward to connect and work with other developers. So feel free to contact me via any of my social’s below or send a request. </p>
 
 <img align="center" alt="coding" width="300" src="https://cdn.dribbble.com/users/2131993/screenshots/4948736/media/421d4ed2f3d23c73d64d20963f61f422.gif">
 
