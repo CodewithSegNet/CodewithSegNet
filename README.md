@@ -27,7 +27,7 @@
 
 - 📫 How to reach me **Eeomo@yahoo.com**
 
-- 📌 Fun fact **I'm a Gamer 🎮 and Music Lover 🎧(**All Genre**)**
+- 📌 Fun fact **I'm a Gamer 🎮 and a Music Lover 🎧(**All Genre**)**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
