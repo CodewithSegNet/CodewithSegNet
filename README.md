@@ -15,7 +15,7 @@
 
 
 
-- 👨🏾‍💻 I’m currently working on **Alx Software Engineer Program**
+- 👨🏾‍💻 I’m currently working on **Alx Software Engineering Program**
 
 - 💻 I’m currently learning **C programming language, Python**
 
