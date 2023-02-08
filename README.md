@@ -2,10 +2,9 @@
 ![](https://raw.githubusercontent.com/Schweinepriester/Schweinepriester/master/MeagerHardtofindAlbertosaurus-size_restricted.gif)
 
 <h1 align="center">Hi 👋, I'm Olusegun Emmanuel</h1>
-<h3 align="center">An Aspired Full Stack Developer</h3>
+<h3 align="center">Web Developer</h3>
 
-<br>
-<p align=”center”>I’m looking forward to connect and work with other developers. So feel free to contact me via any of my social’s below or send a request. </p>
+
 
 <img align="center" alt="coding" width="300" src="https://cdn.dribbble.com/users/2131993/screenshots/4948736/media/421d4ed2f3d23c73d64d20963f61f422.gif">
 
