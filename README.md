@@ -1,12 +1,12 @@
 
-![](https://raw.githubusercontent.com/Schweinepriester/Schweinepriester/master/MeagerHardtofindAlbertosaurus-size_restricted.gif)
+ ![](https://raw.githubusercontent.com/Schweinepriester/Schweinepriester/master/MeagerHardtofindAlbertosaurus-size_restricted.gif) 
 
-<h1 align="center">Hi 👋, I'm Olusegun Emmanuel</h1>
-<h3 align="center">Web Developer</h3>
+<h1 align="center">I'm Olusegun Emmanuel</h1>
+<h3 align="center">A Web Developer</h3>
 
 
 
-<img align="center" alt="coding" width="300" src="https://cdn.dribbble.com/users/2131993/screenshots/4948736/media/421d4ed2f3d23c73d64d20963f61f422.gif">
+<img align="center" alt="coding" height="600" width="1200" src="https://cdn.dribbble.com/users/2131993/screenshots/4948736/media/421d4ed2f3d23c73d64d20963f61f422.gif">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=codewithsegnet&label=Profile%20views&color=0e75b6&style=flat" alt="codewithsegnet" /> </p>
 
