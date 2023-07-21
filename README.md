@@ -7,7 +7,7 @@
 
 
 
-<img align="right" alt="coding" height="300" width="500" src="https://cdn.dribbble.com/users/2131993/screenshots/4948736/media/421d4ed2f3d23c73d64d20963f61f422.gif">
+<img align="right" alt="coding" height="400" width="500" src="https://cdn.dribbble.com/users/2131993/screenshots/4948736/media/421d4ed2f3d23c73d64d20963f61f422.gif">
 
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=codewithsegnet&label=Profile%20views&color=0e75b6&style=flat" alt="codewithsegnet" /> </p>
 
