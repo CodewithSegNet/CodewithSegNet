@@ -3,7 +3,7 @@
 </div>
 
 <h1 align="center">I'm Olusegun Emmanuel</h1>
-<h2 align="center">Backend Developer, Aspiring Softwore Engineer</h2>
+<h2 align="center">Backend Developer, Aspiring Software Engineer</h2>
 
 
 
