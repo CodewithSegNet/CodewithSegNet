@@ -11,13 +11,13 @@
 
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=codewithsegnet&label=Profile%20views&color=0e75b6&style=flat" alt="codewithsegnet" /> </p>
 
-- 👨🏾‍💻 I’m currently working on **Alx Software Engineering Projects And Open Source**
+- 👨🏾‍💻 I’m currently working on **HNG Internship Projects And Open Source**
 
 - 💻 I’m currently learning **Python, Javascript(ES6) and Backend Technologies**
 
 - 🤝 I’m looking to collaborate on **JavaScript projects, Python projects or Open Source Projects**
 
-- 💬 Ask me about **JavaScript, Nodejs, Python(Flask Framework), Database Systems**
+- 💬 Ask me about **JavaScript, Nodejs, Python(Flask & Fastapi Framework), Database Systems**
 
 - 📫 How to reach me **OlusegunEmmanuel1031@gmail.com**
 
