@@ -1,38 +1,77 @@
 <div align="center">
-  <img align="center" src="https://raw.githubusercontent.com/Schweinepriester/Schweinepriester/master/MeagerHardtofindAlbertosaurus-size_restricted.gif" alt="Image" />
+  <img align="center" height="200" width="1000" src="https://raw.githubusercontent.com/Schweinepriester/Schweinepriester/master/MeagerHardtofindAlbertosaurus-size_restricted.gif" alt="Image" />
 </div>
 
-<h1 align="center">I'm Olusegun Emmanuel</h1>
-<h2 align="center">Backend Developer, Aspiring Software Engineer</h2>
+<div>
+  <img align="left" src="https://github.com/codewithsegnet.png?size=50" alt="Profile Picture" style="border-radius:50%;" /> <h1 align="left">I'm Olusegun Emmanuel</h1>
+</div>
 
+<h3 align="left">👨🏾‍💻 Backend Developer, Aspiring Software Engineer</h3>
 
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=codewithsegnet&show_icons=true&locale=en&bg_color=00000000&hide_border=True" alt="codewithsegnet" /></p>
 
-<img align="right" alt="coding" height="400" width="500" src="https://cdn.dribbble.com/users/2131993/screenshots/4948736/media/421d4ed2f3d23c73d64d20963f61f422.gif">
+> Tools, languages, and other things that I like to work with.
+<table>
+  <tr>
+    <td align="center" width="96">
+      <a href="#macropower-tech">
+        <img src="https://raw.githubusercontent.com/github/explore/main/topics/python/python.png" width="48" height="48" alt="Python" />
+      </a>
+      <br>Python
+    </td>
+    <td align="center" width="96">
+      <a href="#macropower-tech">
+        <img src="https://raw.githubusercontent.com/github/explore/main/topics/javascript/javascript.png" width="48" height="48" alt="JavaScript" />
+      </a>
+      <br>JavaScript
+    </td>
+    <td align="center" width="96">
+      <a href="#macropower-tech">
+        <img src="https://reactnative.dev/img/header_logo.svg" width="48" height="48" alt="React-Native" />
+      </a>
+      <br>React
+    </td>
+    <td align="center" width="96">
+      <a href="#macropower-tech">
+        <img src="https://raw.githubusercontent.com/github/explore/main/topics/typescript/typescript.png" width="48" height="48" alt="TypeScript" />
+      </a>
+      <br>TypeScript
+    </td>
+    <td align="center" width="96">
+      <a href="#macropower-tech">
+        <img src="https://raw.githubusercontent.com/cncf/artwork/master/projects/kubernetes/icon/color/kubernetes-icon-color.svg" width="48" height="48" alt="Kubernetes" />
+      </a>
+      <br>Kubernetes
+    </td>
+    <td align="center" width="96"> 
+      <a href="#macropower-tech">
+        <img src="https://raw.githubusercontent.com/github/explore/main/topics/docker/docker.png" width="48" height="48" alt="Docker" />
+      </a>
+      <br>Docker
+    </td>
+   <td align="center" width="96">
+      <a href="#macropower-tech">
+        <img src="https://reactnative.dev/img/header_logo.svg" width="48" height="48" alt="React-Native" />
+      </a>
+      <br>ReactNative
+    </td>
+     <td align="center" width="96">
+      <a href="#macropower-tech">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" width="48" height="48" alt="Linux" />
+      </a>
+      <br>Linux
+    </td>
+  </tr>
+</table>
 
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=codewithsegnet&label=Profile%20views&color=0e75b6&style=flat" alt="codewithsegnet" /> </p>
-
-- 👨🏾‍💻 I’m currently working on **HNG Internship Projects And Open Source**
-
-- 💻 I’m currently learning **Python, Javascript(ES6) and Backend Technologies**
-
-- 🤝 I’m looking to collaborate on **JavaScript projects, Python projects or Open Source Projects**
-
-- 💬 Ask me about **JavaScript, Nodejs, Python(Flask & Fastapi Framework), Database Systems**
-
-- 📫 How to reach me **OlusegunEmmanuel1031@gmail.com**
-
-- 📌 Fun fact **I'm a Gamer 🎮 and a Music Lover 🎧**
-
-<br>
-<h3 align="left">Connect with me:</h3>
+<h5 align="left">Connect with me:</h5>
 <p align="left">
 <a href="https://twitter.com/_segunemmanuel_" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="_segunemmanuel_" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/http://linkedin.com/in/olusegun-omogbehinmi-412983115" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="http://linkedin.com/in/olusegun-omogbehinmi-412983115" height="30" width="40" /></a>
 <a href="https://discord.gg/Emmy12345#9491" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="Emmy12345#9491" height="30" width="40" /></a>
+
+   <div style="flex: 1; text-align: right;">
+    <h5>How to reach me:</h5>
+    <a href="mailto:OlusegunEmmanuel1031@gmail.com" style="color: blue; font-weight: bold;">OlusegunEmmanuel1031@gmail.com</a>
+  </div>
 </p>
-<h3 align="left">Languages and Tools:</h3>
-<p align="center"> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.nginx.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://redis.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="redis" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> </p>
-
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=codewithsegnet&show_icons=true&locale=en&layout=compact" alt="codewithsegnet" /></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=codewithsegnet&show_icons=true&locale=en" alt="codewithsegnet" /></p>
