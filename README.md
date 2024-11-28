@@ -8,7 +8,7 @@
 
 <h3 align="left">👨🏾‍💻 Backend Developer, Aspiring Software Engineer</h3>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=codewithsegnet&show_icons=true&locale=en&bg_color=00000000&hide_border=True" alt="codewithsegnet" /></p>
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=codewithsegnet&show_icons=true&locale=en&bg_color=00000000&hide_border=True&text_color=ffffff" alt="codewithsegnet" /></p>
 
 > Tools, languages, and other things that I like to work with.
 <table>
