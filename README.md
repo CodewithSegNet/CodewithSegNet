@@ -3,7 +3,8 @@
 </div>
 
 <div>
-  <img align="left" src="https://github.com/codewithsegnet.png?size=50" alt="Profile Picture" style="border-radius:50%;" /> <h1 align="left">I'm Olusegun Emmanuel</h1>
+  <img align="left" src="https://github.com/codewithsegnet.png?size=50" alt="Profile Picture" style="border-radius:50%;" /> 
+  <h1 align="left">I'm Olusegun Emmanuel</h1>
 </div>
 
 <h3 align="left">👨🏾‍💻 Backend Developer, Aspiring Software Engineer</h3>
