@@ -14,3 +14,8 @@ jobs:
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          API_BASE_URL: https://wakatime.com/api
+          REPOSITORY: CodewithSegNet/CodewithSegNet
+          TARGET_PATH: README.md
+          TARGET_BRANCH: master
+          
