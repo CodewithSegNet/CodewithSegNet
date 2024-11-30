@@ -16,6 +16,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           API_BASE_URL: https://wakatime.com/api
           REPOSITORY: CodewithSegNet/CodewithSegNet
-          TARGET_PATH: CodewithSegNet/CodewithSegNet/README.md
+          TARGET_PATH: README.md
           TARGET_BRANCH: master
           
