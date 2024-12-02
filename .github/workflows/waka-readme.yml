@@ -25,7 +25,11 @@ jobs:
           COMMIT_EMAIL: "commits@emmanuel.ru"
           SHOW_UPDATED_DATE: false
           SHOW_LINES_OF_CODE: true
-          SHOW_DAYS_OF_WEEK: false
+          SHOW_DAYS_OF_WEEK: true
           SHOW_PROJECTS: false
+          SHOW_LANGUAGE: true
           SHOW_SHORT_INFO: false
           SHOW_LOC_CHART: false
+          SHOW_TOTAL_CODE_TIME: false
+          SHOW_EDITORS: false
+          SHOW_PROFILE_VIEWS: true
