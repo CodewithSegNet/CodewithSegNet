@@ -122,6 +122,10 @@ CSS                      2 repos             █░░░░░░░░░░�
 
 <!--END_SECTION:wakatime-->
 
+<!--START_SECTION:activity-->
+
+<!--END_SECTION:activity-->
+
 <h5 align="left">Connect with me:</h5>
 <p align="left">
 <a href="https://twitter.com/_segunemmanuel_" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="_segunemmanuel_" height="30" width="40" /></a>
