@@ -8,12 +8,6 @@
 <h3 align="left">👨🏾‍💻 Backend Developer, Aspiring Software Engineer</h3>
 <p align="center"> Open To Jobs & Gigs</p>
 
-<div>
-  <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=codewithsegnet&show_icons=true&locale=en&bg_color=00000000&layout=compact&hide_border=True&text_color=ffffff" alt="codewithsegnet" /></p>
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=codewithsegnet&show_icons=true&locale=en&bg_color=00000000&hide_border=True&text_color=ffffff" alt="codewithsegnet" /></p>
-
-</div>
-
 > Tools, languages, and other things that I like to work with.
 <table>
   <tr>
@@ -68,6 +62,12 @@
   </tr>
 </table>
 
+
+<div>
+  <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=codewithsegnet&show_icons=true&locale=en&bg_color=00000000&layout=compact&hide_border=True&text_color=ffffff" alt="codewithsegnet" /></p>
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=codewithsegnet&show_icons=true&locale=en&bg_color=00000000&hide_border=True&text_color=ffffff" alt="codewithsegnet" /></p>
+
+</div>
 
 <!--START_SECTION:wakatime-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-1%20hr%2024%20mins-blue)
