@@ -11,6 +11,50 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=codewithsegnet&show_icons=true&locale=en&bg_color=00000000&hide_border=True&text_color=ffffff" alt="codewithsegnet" /></p>
 
 <!--START_SECTION:wakatime-->
+![Code Time](http://img.shields.io/badge/Code%20Time-1%20hr%2024%20mins-blue)
+
+![Profile Views](http://img.shields.io/badge/Profile%20Views-235-blue)
+
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-25.1%20million%20lines%20of%20code-blue)
+
+**I'm a Night 🦉** 
+
+```text
+🌞 Morning                515 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.91 % 
+🌆 Daytime                1314 commits        ████████░░░░░░░░░░░░░░░░░   32.93 % 
+🌃 Evening                670 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.79 % 
+🌙 Night                  1491 commits        █████████░░░░░░░░░░░░░░░░   37.37 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Africa/Lagos
+
+💬 Programming Languages: 
+No Activity Tracked This Week
+
+🔥 Editors: 
+No Activity Tracked This Week
+
+💻 Operating System: 
+No Activity Tracked This Week
+```
+
+**I Mostly Code in Python** 
+
+```text
+Python                   16 repos            ██████████░░░░░░░░░░░░░░░   39.02 % 
+Shell                    5 repos             ███░░░░░░░░░░░░░░░░░░░░░░   12.20 % 
+JavaScript               4 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   09.76 % 
+HTML                     4 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   09.76 % 
+CSS                      2 repos             █░░░░░░░░░░░░░░░░░░░░░░░░   04.88 % 
+```
+
+
+
+
 <!--END_SECTION:wakatime-->
 
 > Tools, languages, and other things that I like to work with.
