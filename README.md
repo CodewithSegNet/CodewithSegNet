@@ -123,7 +123,6 @@ CSS                      2 repos             █░░░░░░░░░░�
 <!--END_SECTION:wakatime-->
 
 <!--START_SECTION:activity-->
-
 <!--END_SECTION:activity-->
 
 <h5 align="left">Connect with me:</h5>
