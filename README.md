@@ -101,10 +101,10 @@ Sunday                   210 commits         █░░░░░░░░░░�
 🕑︎ Time Zone: Africa/Lagos
 
 💬 Programming Languages: 
-No Activity Tracked This Week
+Python                   49 mins             █████████████████████████   100.00 % 
 
 💻 Operating System: 
-No Activity Tracked This Week
+WSL                      49 mins             █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in Python** 
