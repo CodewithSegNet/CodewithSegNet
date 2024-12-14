@@ -70,7 +70,7 @@
 </div>
 
 <!--START_SECTION:wakatime-->
-![Profile Views](http://img.shields.io/badge/Profile%20Views-308-blue)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-212-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-25.1%20million%20lines%20of%20code-blue)
 
