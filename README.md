@@ -129,13 +129,13 @@ CSS                      3 repos             ██░░░░░░░░░�
 
 # ⚡ Recent Activity
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#1](https://github.com/CodewithSegNet/ridesmash/pull/1) in [CodewithSegNet/ridesmash](https://github.com/CodewithSegNet/ridesmash)
-2. 💪 Opened PR [#1](https://github.com/CodewithSegNet/ridesmash/pull/1) in [CodewithSegNet/ridesmash](https://github.com/CodewithSegNet/ridesmash)
-3. 🎉 Merged PR [#11](https://github.com/Omoln-Services/Flask-BE-poioties-boilerplate/pull/11) in [Omoln-Services/Flask-BE-poioties-boilerplate](https://github.com/Omoln-Services/Flask-BE-poioties-boilerplate)
-4. 💪 Opened PR [#11](https://github.com/Omoln-Services/Flask-BE-poioties-boilerplate/pull/11) in [Omoln-Services/Flask-BE-poioties-boilerplate](https://github.com/Omoln-Services/Flask-BE-poioties-boilerplate)
-5. 🎉 Merged PR [#10](https://github.com/Omoln-Services/Flask-BE-poioties-boilerplate/pull/10) in [Omoln-Services/Flask-BE-poioties-boilerplate](https://github.com/Omoln-Services/Flask-BE-poioties-boilerplate)
-6. 💪 Opened PR [#9](https://github.com/Omoln-Services/Flask-BE-poioties-boilerplate/pull/9) in [Omoln-Services/Flask-BE-poioties-boilerplate](https://github.com/Omoln-Services/Flask-BE-poioties-boilerplate)
-7. ❗ Opened issue [#8](https://github.com/Omoln-Services/Flask-BE-poioties-boilerplate/issues/8) in [Omoln-Services/Flask-BE-poioties-boilerplate](https://github.com/Omoln-Services/Flask-BE-poioties-boilerplate)
+1. 🎉 Merged PR [#2](https://github.com/CodewithSegNet/ridesmash/pull/2) in [CodewithSegNet/ridesmash](https://github.com/CodewithSegNet/ridesmash)
+2. 💪 Opened PR [#2](https://github.com/CodewithSegNet/ridesmash/pull/2) in [CodewithSegNet/ridesmash](https://github.com/CodewithSegNet/ridesmash)
+3. 🎉 Merged PR [#1](https://github.com/CodewithSegNet/ridesmash/pull/1) in [CodewithSegNet/ridesmash](https://github.com/CodewithSegNet/ridesmash)
+4. 💪 Opened PR [#1](https://github.com/CodewithSegNet/ridesmash/pull/1) in [CodewithSegNet/ridesmash](https://github.com/CodewithSegNet/ridesmash)
+5. 🎉 Merged PR [#11](https://github.com/Omoln-Services/Flask-BE-poioties-boilerplate/pull/11) in [Omoln-Services/Flask-BE-poioties-boilerplate](https://github.com/Omoln-Services/Flask-BE-poioties-boilerplate)
+6. 💪 Opened PR [#11](https://github.com/Omoln-Services/Flask-BE-poioties-boilerplate/pull/11) in [Omoln-Services/Flask-BE-poioties-boilerplate](https://github.com/Omoln-Services/Flask-BE-poioties-boilerplate)
+7. 🎉 Merged PR [#10](https://github.com/Omoln-Services/Flask-BE-poioties-boilerplate/pull/10) in [Omoln-Services/Flask-BE-poioties-boilerplate](https://github.com/Omoln-Services/Flask-BE-poioties-boilerplate)
 <!--END_SECTION:activity-->
 
 
