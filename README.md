@@ -92,13 +92,13 @@ CSS                      2 repos             █░░░░░░░░░░�
 
 # ⚡ Recent Activity
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#29](https://github.com/CodewithSegNet/ridesmash/pull/29) in [CodewithSegNet/ridesmash](https://github.com/CodewithSegNet/ridesmash)
-2. 💪 Opened PR [#29](https://github.com/CodewithSegNet/ridesmash/pull/29) in [CodewithSegNet/ridesmash](https://github.com/CodewithSegNet/ridesmash)
-3. 🎉 Merged PR [#28](https://github.com/CodewithSegNet/ridesmash/pull/28) in [CodewithSegNet/ridesmash](https://github.com/CodewithSegNet/ridesmash)
-4. 💪 Opened PR [#28](https://github.com/CodewithSegNet/ridesmash/pull/28) in [CodewithSegNet/ridesmash](https://github.com/CodewithSegNet/ridesmash)
-5. 🎉 Merged PR [#27](https://github.com/CodewithSegNet/ridesmash/pull/27) in [CodewithSegNet/ridesmash](https://github.com/CodewithSegNet/ridesmash)
-6. 💪 Opened PR [#27](https://github.com/CodewithSegNet/ridesmash/pull/27) in [CodewithSegNet/ridesmash](https://github.com/CodewithSegNet/ridesmash)
-7. 🎉 Merged PR [#26](https://github.com/CodewithSegNet/ridesmash/pull/26) in [CodewithSegNet/ridesmash](https://github.com/CodewithSegNet/ridesmash)
+1. 🎉 Merged PR [#1](https://github.com/Smash-Tech-Group/ridesmash/pull/1) in [Smash-Tech-Group/ridesmash](https://github.com/Smash-Tech-Group/ridesmash)
+2. 💪 Opened PR [#1](https://github.com/Smash-Tech-Group/ridesmash/pull/1) in [Smash-Tech-Group/ridesmash](https://github.com/Smash-Tech-Group/ridesmash)
+3. 🎉 Merged PR [#29](https://github.com/CodewithSegNet/ridesmash/pull/29) in [CodewithSegNet/ridesmash](https://github.com/CodewithSegNet/ridesmash)
+4. 💪 Opened PR [#29](https://github.com/CodewithSegNet/ridesmash/pull/29) in [CodewithSegNet/ridesmash](https://github.com/CodewithSegNet/ridesmash)
+5. 🎉 Merged PR [#28](https://github.com/CodewithSegNet/ridesmash/pull/28) in [CodewithSegNet/ridesmash](https://github.com/CodewithSegNet/ridesmash)
+6. 💪 Opened PR [#28](https://github.com/CodewithSegNet/ridesmash/pull/28) in [CodewithSegNet/ridesmash](https://github.com/CodewithSegNet/ridesmash)
+7. 🎉 Merged PR [#27](https://github.com/CodewithSegNet/ridesmash/pull/27) in [CodewithSegNet/ridesmash](https://github.com/CodewithSegNet/ridesmash)
 <!--END_SECTION:activity-->
 
 
