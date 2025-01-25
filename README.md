@@ -101,10 +101,11 @@ Sunday                   210 commits         █░░░░░░░░░░�
 🕑︎ Time Zone: Africa/Lagos
 
 💬 Programming Languages: 
-No Activity Tracked This Week
+JavaScript               4 hrs 31 mins       ████████████████████████░   96.11 % 
+CSS                      10 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.89 % 
 
 💻 Operating System: 
-No Activity Tracked This Week
+WSL                      4 hrs 42 mins       █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in Python** 
