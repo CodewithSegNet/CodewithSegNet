@@ -128,13 +128,13 @@ CSS                      2 repos             █░░░░░░░░░░�
 
 # ⚡ Recent Activity
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#15](https://github.com/CodewithSegNet/Smash-Travels/pull/15) in [CodewithSegNet/Smash-Travels](https://github.com/CodewithSegNet/Smash-Travels)
-2. 💪 Opened PR [#15](https://github.com/CodewithSegNet/Smash-Travels/pull/15) in [CodewithSegNet/Smash-Travels](https://github.com/CodewithSegNet/Smash-Travels)
-3. 🎉 Merged PR [#14](https://github.com/CodewithSegNet/Smash-Travels/pull/14) in [CodewithSegNet/Smash-Travels](https://github.com/CodewithSegNet/Smash-Travels)
-4. 💪 Opened PR [#14](https://github.com/CodewithSegNet/Smash-Travels/pull/14) in [CodewithSegNet/Smash-Travels](https://github.com/CodewithSegNet/Smash-Travels)
-5. 🎉 Merged PR [#13](https://github.com/CodewithSegNet/Smash-Travels/pull/13) in [CodewithSegNet/Smash-Travels](https://github.com/CodewithSegNet/Smash-Travels)
-6. 💪 Opened PR [#13](https://github.com/CodewithSegNet/Smash-Travels/pull/13) in [CodewithSegNet/Smash-Travels](https://github.com/CodewithSegNet/Smash-Travels)
-7. 🎉 Merged PR [#12](https://github.com/CodewithSegNet/Smash-Travels/pull/12) in [CodewithSegNet/Smash-Travels](https://github.com/CodewithSegNet/Smash-Travels)
+1. 🎉 Merged PR [#1](https://github.com/Billionmekus/qiimeet/pull/1) in [Billionmekus/qiimeet](https://github.com/Billionmekus/qiimeet)
+2. 💪 Opened PR [#1](https://github.com/Billionmekus/qiimeet/pull/1) in [Billionmekus/qiimeet](https://github.com/Billionmekus/qiimeet)
+3. 💪 Opened PR [#2](https://github.com/Smash-Tech-Group/qiimeet/pull/2) in [Smash-Tech-Group/qiimeet](https://github.com/Smash-Tech-Group/qiimeet)
+4. 🎉 Merged PR [#15](https://github.com/CodewithSegNet/Smash-Travels/pull/15) in [CodewithSegNet/Smash-Travels](https://github.com/CodewithSegNet/Smash-Travels)
+5. 💪 Opened PR [#15](https://github.com/CodewithSegNet/Smash-Travels/pull/15) in [CodewithSegNet/Smash-Travels](https://github.com/CodewithSegNet/Smash-Travels)
+6. 🎉 Merged PR [#14](https://github.com/CodewithSegNet/Smash-Travels/pull/14) in [CodewithSegNet/Smash-Travels](https://github.com/CodewithSegNet/Smash-Travels)
+7. 💪 Opened PR [#14](https://github.com/CodewithSegNet/Smash-Travels/pull/14) in [CodewithSegNet/Smash-Travels](https://github.com/CodewithSegNet/Smash-Travels)
 <!--END_SECTION:activity-->
 
 
