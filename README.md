@@ -135,7 +135,7 @@ CSS                      3 repos             ██░░░░░░░░░�
 4. 💪 Opened PR [#16](https://github.com/CodewithSegNet/Smash-Travels/pull/16) in [CodewithSegNet/Smash-Travels](https://github.com/CodewithSegNet/Smash-Travels)
 5. 🎉 Merged PR [#1](https://github.com/Billionmekus/qiimeet/pull/1) in [Billionmekus/qiimeet](https://github.com/Billionmekus/qiimeet)
 6. 💪 Opened PR [#1](https://github.com/Billionmekus/qiimeet/pull/1) in [Billionmekus/qiimeet](https://github.com/Billionmekus/qiimeet)
-7. 💪 Opened PR [#2](https://github.com/Smash-Tech-Group/qiimeet/pull/2) in [Smash-Tech-Group/qiimeet](https://github.com/Smash-Tech-Group/qiimeet)
+7. 🎉 Merged PR [#15](https://github.com/CodewithSegNet/Smash-Travels/pull/15) in [CodewithSegNet/Smash-Travels](https://github.com/CodewithSegNet/Smash-Travels)
 <!--END_SECTION:activity-->
 
 
