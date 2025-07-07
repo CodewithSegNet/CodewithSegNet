@@ -70,7 +70,7 @@
 </div>
 
 <!--START_SECTION:wakatime-->
-![Profile Views](http://img.shields.io/badge/Profile%20Views-5-blue)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-2-blue)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-28.3%20million%20lines%20of%20code-blue)
 
@@ -101,14 +101,14 @@ Sunday                   259 commits         █░░░░░░░░░░�
 🕑︎ Time Zone: Africa/Lagos
 
 💬 Programming Languages: 
-JavaScript               11 hrs 55 mins      █████████████████████████   99.16 % 
+JavaScript               11 hrs 51 mins      █████████████████████████   99.15 % 
 Bash                     2 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.32 % 
 TypeScript               2 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.30 % 
 HTML                     1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   00.15 % 
 Other                    0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.07 % 
 
 💻 Operating System: 
-Windows                  12 hrs 1 min        █████████████████████████   100.00 % 
+Windows                  11 hrs 57 mins      █████████████████████████   100.00 % 
 ```
 
 **I Mostly Code in Python** 
