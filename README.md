@@ -5,7 +5,7 @@
 <div>
   <h1 align="left">👋 I'm Olusegun Emmanuel</h1>
 </div>
-<h3 align="left">👨🏾‍💻 Backend Developer, Aspiring Software Engineer</h3>
+<h3 align="left">👨🏾‍💻 Backend Developer, Software Engineer</h3>
 <p align="center"> Open To Jobs & Gigs</p>
 
 > Tools, languages, and other things that I like to work with.
