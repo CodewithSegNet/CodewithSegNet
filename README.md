@@ -129,7 +129,7 @@ Shell                    5 repos             ██░░░░░░░░░�
 
 # ⚡ Recent Activity
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#17](https://github.com/CodewithSegNet/Smash-Travels/pull/17) in [CodewithSegNet/Smash-Travels](https://github.com/CodewithSegNet/Smash-Travels)
+1. 🔒 Closed issue [#7](https://github.com/Smash-Tech-Group/apartment/issues/7) in [Smash-Tech-Group/apartment](https://github.com/Smash-Tech-Group/apartment)
 2. 💪 Opened PR [#17](https://github.com/CodewithSegNet/Smash-Travels/pull/17) in [CodewithSegNet/Smash-Travels](https://github.com/CodewithSegNet/Smash-Travels)
 3. 🎉 Merged PR [#16](https://github.com/CodewithSegNet/Smash-Travels/pull/16) in [CodewithSegNet/Smash-Travels](https://github.com/CodewithSegNet/Smash-Travels)
 4. 💪 Opened PR [#16](https://github.com/CodewithSegNet/Smash-Travels/pull/16) in [CodewithSegNet/Smash-Travels](https://github.com/CodewithSegNet/Smash-Travels)
