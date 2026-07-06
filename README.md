@@ -63,11 +63,6 @@
 </table>
 
 
-<div>
-  <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=codewithsegnet&show_icons=true&locale=en&bg_color=00000000&layout=compact&hide_border=True&text_color=ffffff" alt="codewithsegnet" /></p>
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=codewithsegnet&show_icons=true&locale=en&bg_color=00000000&hide_border=True&text_color=ffffff" alt="codewithsegnet" /></p>
-
-</div>
 
 <!--START_SECTION:wakatime-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-1%2C101%20hrs%2053%20mins-blue?style=flat)
