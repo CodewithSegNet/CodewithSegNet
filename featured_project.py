@@ -84,7 +84,7 @@ def format_project(repo):
 
 def build_block(repos):
     if not repos:
-        return "_No public repositories found._"
+        return "_✨ Projects coming soon — stay tuned!_"
     return "\n".join(format_project(r) for r in repos)
 
 

@@ -9,7 +9,7 @@
 
 # 👋 I'm Olusegun Emmanuel
 
-### Software Engineer | React • React Native • FastAPI • Python • PostgreSQL • System Design
+### Software Engineer | React • React Native • FastAPI • DevOps • Python • PostgreSQL • System Design
 
 🇳🇬 Nigeria • 🌍 Open to Remote Opportunities
 
@@ -75,8 +75,13 @@ Africa’s New Social Pulse From Lagos to Nairobi, connect with real people, rea
 
 ## 📈 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=CodewithSegNet&show_icons=true&theme=radical&hide_border=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=CodewithSegNet&layout=compact&theme=radical&hide_border=true)
+<div align="center">
+
+![GitHub Streak](https://streak-stats.demolab.com/?user=CodewithSegNet&theme=radical&hide_border=true)
+
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=CodewithSegNet&theme=redical&hide_border=true&area=true)
+
+</div>
 
 ---
 
@@ -94,7 +99,7 @@ Africa’s New Social Pulse From Lagos to Nairobi, connect with real people, rea
 
 ## 🛎️ Services
 
-- ✅ Remote Backend Engineer (Full-Time or Contract)
+- ✅ Remote Frontend, Backend & DevOps Engineer (Full-Time or Contract)
 - ✅ API Development & Integration
 - ✅ System Architecture & Design
 - ✅ Mobile App Development (React Native)

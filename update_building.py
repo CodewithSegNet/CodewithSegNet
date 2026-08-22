@@ -75,7 +75,7 @@ def format_project(repo):
 
 def build_block(full_names):
     if not full_names:
-        return "_No recent commit activity found._"
+        return "_🔧 Working on something new — check back soon!_"
     lines = []
     for full_name in full_names:
         repo = fetch_repo_details(full_name)
