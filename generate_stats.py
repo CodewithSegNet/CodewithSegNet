@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """
-Generates a retro / CRT-terminal styled SVG showing GitHub stats
-and language breakdown. Commits the SVG to the repo so the README
-can reference it directly — no external service needed.
+Generates a retro / CRT-terminal styled SVG showing GitHub stats,
+streak info, and language breakdown. Commits the SVG to the repo
+so the README can reference it directly — no external service needed.
 
 Requires env vars: GH_TOKEN, GH_USERNAME
 """
 import os
-import sys
 import json
 import urllib.request
+from datetime import datetime, timezone, timedelta
 
 GH_TOKEN = os.environ["GH_TOKEN"]
 GH_USERNAME = os.environ["GH_USERNAME"]
@@ -41,7 +41,6 @@ def fetch_repos():
 
 
 def fetch_languages(repos):
-    """Aggregate byte counts per language across all repos."""
     lang_totals = {}
     for repo in repos:
         try:
@@ -53,7 +52,60 @@ def fetch_languages(repos):
     return lang_totals
 
 
-# ── Retro colour palette ──────────────────────────────────────
+def fetch_streak_data():
+    """Calculate streak from recent push events."""
+    try:
+        events = gh_api(f"/users/{GH_USERNAME}/events/public?per_page=100")
+    except Exception:
+        return {"current": 0, "best": 0, "total_contributions": 0}
+
+    push_dates = set()
+    for e in events:
+        if e.get("type") == "PushEvent":
+            dt = datetime.fromisoformat(e["created_at"].replace("Z", "+00:00"))
+            push_dates.add(dt.date())
+
+    if not push_dates:
+        return {"current": 0, "best": 0, "total_contributions": len(events)}
+
+    sorted_dates = sorted(push_dates, reverse=True)
+    today = datetime.now(timezone.utc).date()
+
+    # Current streak
+    current = 0
+    check = today
+    for _ in range(len(sorted_dates) + 2):
+        if check in push_dates:
+            current += 1
+            check -= timedelta(days=1)
+        elif check == today:
+            # allow today to not have a push yet
+            check -= timedelta(days=1)
+        else:
+            break
+
+    # Best streak (from available data)
+    best = 0
+    streak = 0
+    for i, d in enumerate(sorted_dates):
+        if i == 0:
+            streak = 1
+        else:
+            if (sorted_dates[i - 1] - d).days == 1:
+                streak += 1
+            else:
+                best = max(best, streak)
+                streak = 1
+    best = max(best, streak, current)
+
+    return {
+        "current": current,
+        "best": best,
+        "total_contributions": len(events),
+    }
+
+
+# ── Colour palette ────────────────────────────────────────────
 
 LANG_COLORS = {
     "Python": "#f1e05a",
@@ -76,6 +128,8 @@ LANG_COLORS = {
     "Vue": "#41b883",
     "SCSS": "#c6538c",
     "Makefile": "#427819",
+    "HCL": "#844FBA",
+    "Jinja": "#a52a22",
 }
 
 DEFAULT_COLOR = "#888888"
@@ -87,194 +141,173 @@ def get_color(lang):
 
 # ── SVG generation ────────────────────────────────────────────
 
-def generate_svg(user, repos, languages):
+def generate_svg(user, repos, languages, streak):
     total_stars = sum(r.get("stargazers_count", 0) for r in repos)
     total_repos = len(repos)
     followers = user.get("followers", 0)
-    following = user.get("following", 0)
 
-    # Sort languages by bytes, take top 8
-    sorted_langs = sorted(languages.items(), key=lambda x: x[1], reverse=True)[:8]
+    # Top 6 languages
+    sorted_langs = sorted(languages.items(), key=lambda x: x[1], reverse=True)[:6]
     total_bytes = sum(v for _, v in sorted_langs) or 1
+    lang_data = [(lang, (b / total_bytes) * 100, get_color(lang)) for lang, b in sorted_langs]
 
-    # Calculate percentages
-    lang_data = []
-    for lang, bytes_count in sorted_langs:
-        pct = (bytes_count / total_bytes) * 100
-        lang_data.append((lang, pct, get_color(lang)))
-
-    # SVG dimensions
-    w, h = 520, 400
+    w = 520
+    # Calculate height dynamically
+    lang_section_h = len(lang_data) * 28 + 40
+    h = 240 + lang_section_h
     pad = 20
 
-    # Build the SVG
-    svg_parts = []
+    svg = []
 
-    # ── Header ──
-    svg_parts.append(f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
+    # ── Opening + styles ──
+    svg.append(f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=VT323&amp;display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap');
 
-      .crt-bg {{ fill: #0a0a0a; }}
-      .crt-border {{ fill: none; stroke: #333; stroke-width: 2; rx: 8; ry: 8; }}
-      .crt-glow {{ fill: none; stroke: #00ff41; stroke-width: 1; rx: 8; ry: 8; opacity: 0.3; }}
+      .bg {{ fill: #0d1117; }}
+      .border {{ fill: none; stroke: #00ff41; stroke-width: 1.5; rx: 6; ry: 6; opacity: 0.5; }}
+      .inner-border {{ fill: none; stroke: #1a1a2e; stroke-width: 1; rx: 4; ry: 4; }}
 
       .title {{
-        font-family: 'Press Start 2P', 'VT323', monospace;
-        font-size: 14px;
+        font-family: 'Press Start 2P', 'Courier New', monospace;
+        font-size: 13px;
         fill: #00ff41;
+      }}
+      .section-title {{
+        font-family: 'Press Start 2P', 'Courier New', monospace;
+        font-size: 10px;
+        fill: #00ff41;
+        opacity: 0.8;
       }}
       .stat-label {{
-        font-family: 'VT323', monospace;
-        font-size: 20px;
-        fill: #888;
+        font-family: 'VT323', 'Courier New', monospace;
+        font-size: 18px;
+        fill: #7a7a8e;
       }}
       .stat-value {{
-        font-family: 'VT323', monospace;
-        font-size: 20px;
-        fill: #00ff41;
+        font-family: 'VT323', 'Courier New', monospace;
+        font-size: 22px;
+        fill: #e6e6e6;
+        font-weight: bold;
+      }}
+      .streak-value {{
+        font-family: 'VT323', 'Courier New', monospace;
+        font-size: 22px;
+        fill: #ff6e40;
+        font-weight: bold;
       }}
       .lang-label {{
-        font-family: 'VT323', monospace;
-        font-size: 18px;
-        fill: #ccc;
+        font-family: 'VT323', 'Courier New', monospace;
+        font-size: 16px;
+        fill: #b0b0c0;
       }}
       .lang-pct {{
-        font-family: 'VT323', monospace;
-        font-size: 18px;
-        fill: #888;
+        font-family: 'VT323', 'Courier New', monospace;
+        font-size: 16px;
+        fill: #7a7a8e;
       }}
       .bar-bg {{
-        fill: #1a1a2e;
-        rx: 2;
-        ry: 2;
+        fill: #161b22;
+        rx: 3;
+        ry: 3;
       }}
       .cursor {{
         fill: #00ff41;
         animation: blink 1s step-end infinite;
       }}
-
       @keyframes blink {{
         0%, 100% {{ opacity: 1; }}
         50% {{ opacity: 0; }}
       }}
-
-      @keyframes scanline {{
-        0% {{ transform: translateY(-100%); }}
-        100% {{ transform: translateY(400px); }}
+      @keyframes scanmove {{
+        0% {{ transform: translateY(-{h}px); }}
+        100% {{ transform: translateY({h}px); }}
       }}
-
-      .scanline {{
-        fill: url(#scanlineGrad);
-        animation: scanline 4s linear infinite;
-        opacity: 0.04;
+      .scan {{
+        fill: rgba(255,255,255,0.02);
+        animation: scanmove 6s linear infinite;
       }}
     </style>
 
-    <linearGradient id="scanlineGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="white" stop-opacity="0"/>
-      <stop offset="50%" stop-color="white" stop-opacity="1"/>
-      <stop offset="100%" stop-color="white" stop-opacity="0"/>
-    </linearGradient>
-
     <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+      <feGaussianBlur stdDeviation="1.5" result="b"/>
+      <feComposite in="SourceGraphic" in2="b" operator="over"/>
     </filter>
   </defs>
 
-  <!-- CRT background -->
-  <rect class="crt-bg" width="{w}" height="{h}" rx="8" ry="8"/>
-  <rect class="crt-border" x="1" y="1" width="{w-2}" height="{h-2}"/>
-  <rect class="crt-glow" x="3" y="3" width="{w-6}" height="{h-6}"/>
+  <!-- Background -->
+  <rect class="bg" width="{w}" height="{h}" rx="6" ry="6"/>
+  <rect class="border" x="1" y="1" width="{w-2}" height="{h-2}"/>
 
-  <!-- Scanline overlay -->
-  <rect class="scanline" x="0" y="0" width="{w}" height="60" rx="8"/>
+  <!-- Scanline -->
+  <rect class="scan" x="0" y="0" width="{w}" height="40" rx="6"/>
 ''')
 
-    # ── Title bar ──
-    y = pad + 18
-    svg_parts.append(f'''
-  <!-- Title -->
-  <text class="title" x="{pad}" y="{y}" filter="url(#glow)">
-    &gt; {GH_USERNAME.upper()}'s STATS_
-  </text>
-  <rect class="cursor" x="{pad + len(GH_USERNAME) * 10 + 110}" y="{y - 10}" width="10" height="14"/>
-
-  <!-- Separator -->
-  <line x1="{pad}" y1="{y + 10}" x2="{w - pad}" y2="{y + 10}" stroke="#333" stroke-width="1" stroke-dasharray="4,4"/>
+    # ── Title ──
+    y = pad + 16
+    svg.append(f'''
+  <text class="title" x="{pad}" y="{y}" filter="url(#glow)">&gt; {GH_USERNAME}@github $</text>
+  <rect class="cursor" x="{pad + len(GH_USERNAME) * 9 + 135}" y="{y - 10}" width="8" height="13" rx="1"/>
 ''')
+
+    # ── Divider ──
+    y += 14
+    svg.append(f'  <line x1="{pad}" y1="{y}" x2="{w-pad}" y2="{y}" stroke="#1a1a2e" stroke-width="1"/>')
 
     # ── Stats row ──
-    y += 38
+    y += 28
     stats = [
-        ("REPOS", str(total_repos)),
-        ("STARS", str(total_stars)),
-        ("FOLLOWERS", str(followers)),
-        ("FOLLOWING", str(following)),
+        ("REPOS", str(total_repos), "stat-value"),
+        ("STARS", str(total_stars), "stat-value"),
+        ("FOLLOWERS", str(followers), "stat-value"),
+        ("STREAK", f"{streak['current']}d", "streak-value"),
+        ("BEST", f"{streak['best']}d", "streak-value"),
     ]
 
     col_w = (w - 2 * pad) // len(stats)
-    for i, (label, value) in enumerate(stats):
+    for i, (label, value, cls) in enumerate(stats):
         x = pad + i * col_w
-        svg_parts.append(f'''
-  <text class="stat-label" x="{x}" y="{y}">{label}</text>
-  <text class="stat-value" x="{x}" y="{y + 22}">{value}</text>
-''')
+        svg.append(f'  <text class="stat-label" x="{x}" y="{y}">{label}</text>')
+        svg.append(f'  <text class="{cls}" x="{x}" y="{y + 24}">{value}</text>')
 
-    # ── Separator ──
-    y += 38
-    svg_parts.append(f'''
-  <line x1="{pad}" y1="{y}" x2="{w - pad}" y2="{y}" stroke="#333" stroke-width="1" stroke-dasharray="4,4"/>
-''')
+    # ── Divider ──
+    y += 42
+    svg.append(f'  <line x1="{pad}" y1="{y}" x2="{w-pad}" y2="{y}" stroke="#1a1a2e" stroke-width="1"/>')
 
     # ── Languages header ──
-    y += 24
-    svg_parts.append(f'''
-  <text class="title" x="{pad}" y="{y}" filter="url(#glow)" font-size="12">
-    &gt; TOP LANGUAGES_
-  </text>
-''')
+    y += 20
+    svg.append(f'  <text class="section-title" x="{pad}" y="{y}" filter="url(#glow)">&gt; TOP_LANGUAGES</text>')
 
     # ── Language bars ──
-    y += 16
-    bar_max_w = w - 2 * pad - 160  # space for label + percentage
-    bar_h = 14
-    spacing = 30
+    bar_max_w = w - 2 * pad - 150
+    bar_h = 12
 
     for lang, pct, color in lang_data:
-        y += spacing
+        y += 28
         bar_w = max(4, (pct / 100) * bar_max_w)
+        bar_x = pad + 110
 
-        # Label
-        svg_parts.append(f'  <text class="lang-label" x="{pad}" y="{y + 11}">{lang}</text>')
+        svg.append(f'  <text class="lang-label" x="{pad}" y="{y + 10}">{lang}</text>')
+        svg.append(f'  <rect class="bar-bg" x="{bar_x}" y="{y}" width="{bar_max_w}" height="{bar_h}"/>')
+        svg.append(f'  <rect x="{bar_x}" y="{y}" width="{bar_w:.1f}" height="{bar_h}" fill="{color}" rx="3" ry="3" opacity="0.9"/>')
+        svg.append(f'  <rect x="{bar_x}" y="{y}" width="{bar_w:.1f}" height="{bar_h}" fill="{color}" rx="3" ry="3" opacity="0.25" filter="url(#glow)"/>')
+        svg.append(f'  <text class="lang-pct" x="{bar_x + bar_max_w + 8}" y="{y + 11}">{pct:.1f}%</text>')
 
-        # Bar background
-        bar_x = pad + 120
-        svg_parts.append(f'  <rect class="bar-bg" x="{bar_x}" y="{y}" width="{bar_max_w}" height="{bar_h}"/>')
-
-        # Bar fill with glow
-        svg_parts.append(f'  <rect x="{bar_x}" y="{y}" width="{bar_w:.1f}" height="{bar_h}" fill="{color}" rx="2" ry="2" opacity="0.85"/>')
-        svg_parts.append(f'  <rect x="{bar_x}" y="{y}" width="{bar_w:.1f}" height="{bar_h}" fill="{color}" rx="2" ry="2" opacity="0.3" filter="url(#glow)"/>')
-
-        # Percentage
-        svg_parts.append(f'  <text class="lang-pct" x="{bar_x + bar_max_w + 8}" y="{y + 12}">{pct:.1f}%</text>')
-
-    # ── Footer ──
-    svg_parts.append(f'''
-  <!-- Pixel dots decoration -->
-  <g opacity="0.15">
-    <rect x="{pad}" y="{h - 18}" width="4" height="4" fill="#00ff41"/>
-    <rect x="{pad + 8}" y="{h - 18}" width="4" height="4" fill="#00ff41"/>
-    <rect x="{pad + 16}" y="{h - 18}" width="4" height="4" fill="#00ff41"/>
+    # ── Footer decoration ──
+    svg.append(f'''
+  <g opacity="0.2">
+    <rect x="{pad}" y="{h - 16}" width="3" height="3" fill="#00ff41"/>
+    <rect x="{pad + 6}" y="{h - 16}" width="3" height="3" fill="#00ff41"/>
+    <rect x="{pad + 12}" y="{h - 16}" width="3" height="3" fill="#00ff41"/>
+    <rect x="{pad + 18}" y="{h - 16}" width="3" height="3" fill="#ff6e40"/>
+    <rect x="{pad + 24}" y="{h - 16}" width="3" height="3" fill="#ff6e40"/>
   </g>
 
-</svg>
-''')
+</svg>''')
 
-    return "".join(svg_parts)
+    return "\n".join(svg)
 
 
 # ── Main ──────────────────────────────────────────────────────
@@ -289,12 +322,16 @@ def main():
     print(f"Fetching languages for {len(repos)} repos...")
     languages = fetch_languages(repos)
 
+    print("Calculating streak data...")
+    streak = fetch_streak_data()
+
     print("Generating retro SVG...")
-    svg = generate_svg(user, repos, languages)
+    svg = generate_svg(user, repos, languages, streak)
 
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         f.write(svg)
-    print(f"Wrote {OUTPUT_PATH}")
+    print(f"Wrote {OUTPUT_PATH} ({len(svg)} bytes)")
+    print(f"  Repos: {len(repos)}, Streak: {streak['current']}d, Best: {streak['best']}d")
 
 
 if __name__ == "__main__":
