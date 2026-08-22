@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="400" viewBox="0 0 520 400">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=VT323&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap');
+
+      .crt-bg { fill: #0a0a0a; }
+      .crt-border { fill: none; stroke: #333; stroke-width: 2; rx: 8; ry: 8; }
+      .crt-glow { fill: none; stroke: #00ff41; stroke-width: 1; rx: 8; ry: 8; opacity: 0.3; }
+
+      .title {
+        font-family: 'Press Start 2P', 'VT323', monospace;
+        font-size: 14px;
+        fill: #00ff41;
+      }
+      .stat-label {
+        font-family: 'VT323', monospace;
+        font-size: 20px;
+        fill: #888;
+      }
+      .stat-value {
+        font-family: 'VT323', monospace;
+        font-size: 20px;
+        fill: #00ff41;
+      }
+      .lang-label {
+        font-family: 'VT323', monospace;
+        font-size: 18px;
+        fill: #ccc;
+      }
+      .lang-pct {
+        font-family: 'VT323', monospace;
+        font-size: 18px;
+        fill: #888;
+      }
+      .bar-bg {
+        fill: #1a1a2e;
+        rx: 2;
+        ry: 2;
+      }
+      .cursor {
+        fill: #00ff41;
+        animation: blink 1s step-end infinite;
+      }
+
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+
+      @keyframes scanline {
+        0% { transform: translateY(-100%); }
+        100% { transform: translateY(400px); }
+      }
+
+      .scanline {
+        fill: url(#scanlineGrad);
+        animation: scanline 4s linear infinite;
+        opacity: 0.04;
+      }
+    </style>
+
+    <linearGradient id="scanlineGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="white" stop-opacity="0"/>
+      <stop offset="50%" stop-color="white" stop-opacity="1"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- CRT background -->
+  <rect class="crt-bg" width="520" height="400" rx="8" ry="8"/>
+  <rect class="crt-border" x="1" y="1" width="518" height="398"/>
+  <rect class="crt-glow" x="3" y="3" width="514" height="394"/>
+
+  <!-- Scanline overlay -->
+  <rect class="scanline" x="0" y="0" width="520" height="60" rx="8"/>
+
+  <!-- Title -->
+  <text class="title" x="20" y="38" filter="url(#glow)">
+    &gt; CODEWITHSEGNET's STATS_
+  </text>
+  <rect class="cursor" x="270" y="28" width="10" height="14"/>
+
+  <!-- Separator -->
+  <line x1="20" y1="48" x2="500" y2="48" stroke="#333" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <text class="stat-label" x="20" y="76">REPOS</text>
+  <text class="stat-value" x="20" y="98">44</text>
+
+  <text class="stat-label" x="140" y="76">STARS</text>
+  <text class="stat-value" x="140" y="98">3</text>
+
+  <text class="stat-label" x="260" y="76">FOLLOWERS</text>
+  <text class="stat-value" x="260" y="98">202</text>
+
+  <text class="stat-label" x="380" y="76">FOLLOWING</text>
+  <text class="stat-value" x="380" y="98">303</text>
+
+  <line x1="20" y1="114" x2="500" y2="114" stroke="#333" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <text class="title" x="20" y="138" filter="url(#glow)" font-size="12">
+    &gt; TOP LANGUAGES_
+  </text>
+  <text class="lang-label" x="20" y="195">JavaScript</text>  <rect class="bar-bg" x="140" y="184" width="320" height="14"/>  <rect x="140" y="184" width="225.2" height="14" fill="#00ff41" rx="2" ry="2" opacity="0.85"/>  <rect x="140" y="184" width="225.2" height="14" fill="#00ff41" rx="2" ry="2" opacity="0.3" filter="url(#glow)"/>  <text class="lang-pct" x="468" y="196">70.4%</text>  <text class="lang-label" x="20" y="225">TypeScript</text>  <rect class="bar-bg" x="140" y="214" width="320" height="14"/>  <rect x="140" y="214" width="35.1" height="14" fill="#00d4ff" rx="2" ry="2" opacity="0.85"/>  <rect x="140" y="214" width="35.1" height="14" fill="#00d4ff" rx="2" ry="2" opacity="0.3" filter="url(#glow)"/>  <text class="lang-pct" x="468" y="226">11.0%</text>  <text class="lang-label" x="20" y="255">Python</text>  <rect class="bar-bg" x="140" y="244" width="320" height="14"/>  <rect x="140" y="244" width="23.8" height="14" fill="#f1e05a" rx="2" ry="2" opacity="0.85"/>  <rect x="140" y="244" width="23.8" height="14" fill="#f1e05a" rx="2" ry="2" opacity="0.3" filter="url(#glow)"/>  <text class="lang-pct" x="468" y="256">7.4%</text>  <text class="lang-label" x="20" y="285">CSS</text>  <rect class="bar-bg" x="140" y="274" width="320" height="14"/>  <rect x="140" y="274" width="14.5" height="14" fill="#ff40ff" rx="2" ry="2" opacity="0.85"/>  <rect x="140" y="274" width="14.5" height="14" fill="#ff40ff" rx="2" ry="2" opacity="0.3" filter="url(#glow)"/>  <text class="lang-pct" x="468" y="286">4.5%</text>  <text class="lang-label" x="20" y="315">HTML</text>  <rect class="bar-bg" x="140" y="304" width="320" height="14"/>  <rect x="140" y="304" width="12.0" height="14" fill="#ff6e40" rx="2" ry="2" opacity="0.85"/>  <rect x="140" y="304" width="12.0" height="14" fill="#ff6e40" rx="2" ry="2" opacity="0.3" filter="url(#glow)"/>  <text class="lang-pct" x="468" y="316">3.7%</text>  <text class="lang-label" x="20" y="345">C</text>  <rect class="bar-bg" x="140" y="334" width="320" height="14"/>  <rect x="140" y="334" width="8.3" height="14" fill="#ff4444" rx="2" ry="2" opacity="0.85"/>  <rect x="140" y="334" width="8.3" height="14" fill="#ff4444" rx="2" ry="2" opacity="0.3" filter="url(#glow)"/>  <text class="lang-pct" x="468" y="346">2.6%</text>  <text class="lang-label" x="20" y="375">Shell</text>  <rect class="bar-bg" x="140" y="364" width="320" height="14"/>  <rect x="140" y="364" width="4.0" height="14" fill="#89e051" rx="2" ry="2" opacity="0.85"/>  <rect x="140" y="364" width="4.0" height="14" fill="#89e051" rx="2" ry="2" opacity="0.3" filter="url(#glow)"/>  <text class="lang-pct" x="468" y="376">0.2%</text>  <text class="lang-label" x="20" y="405">SCSS</text>  <rect class="bar-bg" x="140" y="394" width="320" height="14"/>  <rect x="140" y="394" width="4.0" height="14" fill="#c6538c" rx="2" ry="2" opacity="0.85"/>  <rect x="140" y="394" width="4.0" height="14" fill="#c6538c" rx="2" ry="2" opacity="0.3" filter="url(#glow)"/>  <text class="lang-pct" x="468" y="406">0.1%</text>
+  <!-- Pixel dots decoration -->
+  <g opacity="0.15">
+    <rect x="20" y="382" width="4" height="4" fill="#00ff41"/>
+    <rect x="28" y="382" width="4" height="4" fill="#00ff41"/>
+    <rect x="36" y="382" width="4" height="4" fill="#00ff41"/>
+  </g>
+
+</svg>
