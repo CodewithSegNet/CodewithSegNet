@@ -21,6 +21,7 @@ I build full-stack products end-to-end — from FastAPI/PostgreSQL backends to R
 
 ## 🚀 Currently Building
 <!--START_SECTION:building-->
+_No recent commit activity found._
 <!--END_SECTION:building-->
 
 ---
