@@ -2,7 +2,7 @@ name: Waka Readme
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
   workflow_dispatch:
 jobs:
   update-readme:
@@ -17,7 +17,7 @@ jobs:
           REPOSITORY: CodewithSegNet/CodewithSegNet
           TARGET_PATH: README.md
           TARGET_BRANCH: master
-          SECTION_NAME: wakatime
+          SECTION_NAME: waka
           COMMIT_BY_ME: true
           COMMIT_MESSAGE: "chore (README): update wakatime stats"
           COMMIT_USERNAME: SegunWakaTime

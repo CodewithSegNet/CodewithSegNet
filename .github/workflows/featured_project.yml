@@ -1,0 +1,29 @@
+name: Update Featured Projects
+
+on:
+    schedule:
+        - cron: "0 0 * * 0" # once a week, Sunday midnight UTC
+    workflow_dispatch: {}
+
+jobs:
+    update-projects:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Update featured projects section
+              env:
+                  GH_TOKEN: ${{ secrets.GH_TOKEN }}
+                  GH_USERNAME: CodewithSegNet
+              run: python3 featured_project.py
+
+            - name: Commit changes
+              run: |
+                  git config --global user.name "segunWakaTime"
+                  git config --global user.email "commits@emmanuel.ru"
+                  git add README.md
+                  git diff --cached --quiet || git commit -m "chore (README): update featured projects"
+                  git pull --rebase
+                  git push

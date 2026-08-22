@@ -10,7 +10,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: jamesgeorge007/github-activity-readme@master
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -18,5 +18,29 @@ jobs:
           COMMIT_NAME: segunWakaTime
           COMMIT_EMAIL: "commits@emmanuel.ru"
           COMMIT_MSG: "chore (README): update recent activity"
-          EMPTY_COMMIT_MSG: "chore (README): empty commit to keep \"Recent Activity\" workflow active after 60 days of no activity"
+          EMPTY_COMMIT_MSG: 'chore (README): empty commit to keep "Recent Activity" workflow active after 60 days of no activity'
           MAX_LINES: 7
+
+  update-currently-building:
+    name: Update this repo's README with currently building (from recent commits)
+    runs-on: ubuntu-latest
+    needs: build # run after the activity job so the two commits don't race on push
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update currently building section
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_USERNAME: CodewithSegNet
+        run: python3 update_building.py
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "segunWakaTime"
+          git config --global user.email "commits@emmanuel.ru"
+          git add README.md
+          git diff --cached --quiet || git commit -m "chore (README): update currently building"
+          git pull --rebase
+          git push
