@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 """
-Pulls this user's repos from the GitHub API, picks the ones to feature,
-and rewrites the block between <!--START_SECTION:projects--> and
-<!--END_SECTION:projects--> in README.md.
+Fetches the user's **actually pinned** repositories from the GitHub
+profile via the GraphQL API, then rewrites the block between
+<!--START_SECTION:projects--> and <!--END_SECTION:projects--> in
+README.md as a 2-row markdown table.
 
-Selection logic:
-  1. Any repo name listed in PINNED_REPOS is always included, in that order.
-  2. Remaining slots are filled with the user's own (non-fork) repos sorted
-     by star count, until MAX_PROJECTS is reached.
+The GraphQL query returns whatever repos the user has pinned in their
+GitHub profile — including repos owned by other orgs/users.
 
 Requires env vars: GH_TOKEN, GH_USERNAME
 """
@@ -15,33 +14,33 @@ import os
 import sys
 import urllib.request
 import json
+import math
 
 GH_TOKEN = os.environ["GH_TOKEN"]
 GH_USERNAME = os.environ["GH_USERNAME"]
 README_PATH = "README.md"
-MAX_PROJECTS = 4
 
-# Repo names (not full URLs) you always want featured, in priority order.
-# Edit this list any time — no need to touch the workflow.
-PINNED_REPOS = [
-    "EddieHubCommunity/open-source-practice",
-    " Poietes-ng/rezzidentEcosystem",
-    "hngprojects/aivideo_be",
-    "EELI_Project",
-    "AirBnB",
-    "alx-files_manager",
-]
+# Maximum pinned repos GitHub allows is 6.
+MAX_PINNED = 6
+# Columns per table row.
+COLS = 3
 
 START_MARKER = "<!--START_SECTION:projects-->"
 END_MARKER = "<!--END_SECTION:projects-->"
 
 
-def gh_api(path):
+# ── GitHub GraphQL helper ──────────────────────────────────────
+
+def graphql(query, variables=None):
+    """Execute a GitHub GraphQL query and return the JSON response."""
+    payload = json.dumps({"query": query, "variables": variables or {}}).encode()
     req = urllib.request.Request(
-        f"https://api.github.com{path}",
+        "https://api.github.com/graphql",
+        data=payload,
+        method="POST",
         headers={
             "Authorization": f"Bearer {GH_TOKEN}",
-            "Accept": "application/vnd.github+json",
+            "Content-Type": "application/json",
             "User-Agent": GH_USERNAME,
         },
     )
@@ -49,49 +48,108 @@ def gh_api(path):
         return json.load(resp)
 
 
-def fetch_repos():
-    repos = gh_api(f"/users/{GH_USERNAME}/repos?per_page=100&sort=updated")
-    return [r for r in repos if not r.get("fork") and not r.get("archived")]
+# ── Fetch pinned repos ─────────────────────────────────────────
+
+PINNED_QUERY = """
+query($login: String!, $count: Int!) {
+  user(login: $login) {
+    pinnedItems(first: $count, types: REPOSITORY) {
+      nodes {
+        ... on Repository {
+          name
+          description
+          url
+          stargazerCount
+          primaryLanguage {
+            name
+          }
+          owner {
+            login
+          }
+        }
+      }
+    }
+  }
+}
+"""
 
 
-def select_projects(repos):
-    by_name = {r["name"]: r for r in repos}
-    ordered = []
+def fetch_pinned_repos():
+    """Return the list of repos the user has pinned on their profile."""
+    result = graphql(PINNED_QUERY, {"login": GH_USERNAME, "count": MAX_PINNED})
 
-    for name in PINNED_REPOS:
-        if name in by_name:
-            ordered.append(by_name.pop(name))
+    errors = result.get("errors")
+    if errors:
+        print(f"GraphQL errors: {errors}", file=sys.stderr)
+        return []
 
-    remaining = sorted(by_name.values(), key=lambda r: r["stargazers_count"], reverse=True)
-    ordered.extend(remaining)
-
-    return ordered[:MAX_PROJECTS]
+    nodes = result.get("data", {}).get("user", {}).get("pinnedItems", {}).get("nodes", [])
+    return [n for n in nodes if n]  # filter out any nulls
 
 
-def format_project(repo):
+# ── Table formatting ───────────────────────────────────────────
+
+def _cell(repo):
+    """Build a single table cell for a repo."""
     name = repo["name"]
     desc = repo.get("description") or "No description provided."
-    lang = repo.get("language") or ""
-    stars = repo.get("stargazers_count", 0)
-    url = repo["html_url"]
+    url = repo["url"]
+    stars = repo.get("stargazerCount", 0)
+    lang_node = repo.get("primaryLanguage")
+    lang = lang_node["name"] if lang_node else ""
+    owner = repo.get("owner", {}).get("login", GH_USERNAME)
 
-    lang_line = f"**{lang}**" if lang else ""
-    stats = f"⭐ {stars}"
-    if lang_line:
-        stats = f"{lang_line} · {stats}"
+    # Show owner prefix only for repos not owned by the user
+    display_name = f"{owner}/{name}" if owner.lower() != GH_USERNAME.lower() else name
 
-    return (
-        f"### [{name}]({url})\n"
-        f"{desc}\n\n"
-        f"{stats}\n"
-    )
+    # Truncate long descriptions to keep the table tidy
+    max_desc = 60
+    if len(desc) > max_desc:
+        desc = desc[: max_desc - 1].rstrip() + "…"
+
+    parts = [f"**[{display_name}]({url})**"]
+    parts.append(f"<br/>{desc}")
+    tag_parts = []
+    if lang:
+        tag_parts.append(f"`{lang}`")
+    tag_parts.append(f"⭐ {stars}")
+    parts.append(f"<br/>{' · '.join(tag_parts)}")
+
+    return " ".join(parts)
 
 
-def build_block(repos):
+def _empty_cell():
+    return " "
+
+
+def build_table(repos):
+    """Render repos as a 2-row × COLS-column markdown table."""
     if not repos:
         return "_✨ Projects coming soon — stay tuned!_"
-    return "\n".join(format_project(r) for r in repos)
 
+    rows = []
+    num_rows = math.ceil(len(repos) / COLS)
+
+    # Header row
+    header = "| " + " | ".join(["Project"] * COLS) + " |"
+    sep = "| " + " | ".join(["---"] * COLS) + " |"
+    rows.append(header)
+    rows.append(sep)
+
+    for r in range(num_rows):
+        cells = []
+        for c in range(COLS):
+            idx = r * COLS + c
+            if idx < len(repos):
+                cells.append(_cell(repos[idx]))
+            else:
+                cells.append(_empty_cell())
+        rows.append("| " + " | ".join(cells) + " |")
+
+    return "\n".join(rows)
+
+
+# ── README update ──────────────────────────────────────────────
 
 def update_readme(block):
     with open(README_PATH, "r", encoding="utf-8") as f:
@@ -106,7 +164,7 @@ def update_readme(block):
     start += len(START_MARKER)
     new_content = (
         content[:start]
-        + "\n\n" + block + "\n"
+        + "\n\n" + block + "\n\n"
         + content[end:]
     )
 
@@ -114,11 +172,20 @@ def update_readme(block):
         f.write(new_content)
 
 
+# ── Main ───────────────────────────────────────────────────────
+
 def main():
-    repos = fetch_repos()
-    selected = select_projects(repos)
-    block = build_block(selected)
+    print("Fetching pinned repos via GraphQL...")
+    repos = fetch_pinned_repos()
+    print(f"  Found {len(repos)} pinned repo(s)")
+
+    for r in repos:
+        owner = r.get("owner", {}).get("login", "?")
+        print(f"    • {owner}/{r['name']} (⭐ {r.get('stargazerCount', 0)})")
+
+    block = build_table(repos)
     update_readme(block)
+    print("README.md updated with pinned repos table.")
 
 
 if __name__ == "__main__":
