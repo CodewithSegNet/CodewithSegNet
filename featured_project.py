@@ -24,7 +24,12 @@ MAX_PROJECTS = 4
 # Repo names (not full URLs) you always want featured, in priority order.
 # Edit this list any time — no need to touch the workflow.
 PINNED_REPOS = [
-    "Smash-Travels",
+    "EddieHubCommunity/open-source-practice",
+    " Poietes-ng/rezzidentEcosystem",
+    "hngprojects/aivideo_be",
+    "EELI_Project",
+    "AirBnB",
+    "alx-files_manager",
 ]
 
 START_MARKER = "<!--START_SECTION:projects-->"
