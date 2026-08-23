@@ -30,25 +30,7 @@ _🔧 Working on something new — check back soon!_
 
 <!--START_SECTION:projects-->
 
-### [EELI_Project](https://github.com/CodewithSegNet/EELI_Project)
-Empowering Women, Uplifting Children,  Transforming Generation
-
-**TypeScript** · ⭐ 0
-
-### [CodewithSegNet](https://github.com/CodewithSegNet/CodewithSegNet)
-My Automated GitHub ReadMe profile.
-
-**Python** · ⭐ 1
-
-### [alx-backend-python](https://github.com/CodewithSegNet/alx-backend-python)
-Type annotations in Python 3,  How you can use type annotations to specify function signatures and variable types,  Duck typing,  How to validate your code with mypy
-
-**Python** · ⭐ 1
-
-### [alx-higher_level_programming](https://github.com/CodewithSegNet/alx-higher_level_programming)
-Write a Shell script that runs a Python script.
-
-**Python** · ⭐ 1
+_✨ Projects coming soon — stay tuned!_
 
 <!--END_SECTION:projects-->
 
