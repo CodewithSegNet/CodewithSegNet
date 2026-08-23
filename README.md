@@ -30,6 +30,11 @@ _🔧 Working on something new — check back soon!_
 
 <!--START_SECTION:projects-->
 
+### [EELI_Project](https://github.com/CodewithSegNet/EELI_Project)
+Empowering Women, Uplifting Children,  Transforming Generation
+
+**TypeScript** · ⭐ 0
+
 ### [CodewithSegNet](https://github.com/CodewithSegNet/CodewithSegNet)
 My Automated GitHub ReadMe profile.
 
@@ -44,11 +49,6 @@ Type annotations in Python 3,  How you can use type annotations to specify funct
 Write a Shell script that runs a Python script.
 
 **Python** · ⭐ 1
-
-### [AftA-Project](https://github.com/CodewithSegNet/AftA-Project)
-Africa’s New Social Pulse From Lagos to Nairobi, connect with real people, real vibes, and real stories. AftA is the heartbeat of Africa’s online generation.
-
-**JavaScript** · ⭐ 0
 
 <!--END_SECTION:projects-->
 
