@@ -74,8 +74,8 @@ _✨ Projects coming soon — stay tuned!_
 
 ## 📅 Recent Activity
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#37](https://github.com/Poietes-ng/rezzidentEcosystem/pull/37) in [Poietes-ng/rezzidentEcosystem](https://github.com/Poietes-ng/rezzidentEcosystem)
-2. ℹ️ Assigned PR [#37](https://github.com/Poietes-ng/rezzidentEcosystem/pull/37) in [Poietes-ng/rezzidentEcosystem](https://github.com/Poietes-ng/rezzidentEcosystem)
+1. 🗣 Commented on [#38](https://github.com/Poietes-ng/rezzidentEcosystem/pull/38#issuecomment-5468896937) in [Poietes-ng/rezzidentEcosystem](https://github.com/Poietes-ng/rezzidentEcosystem)
+2. 🎉 Merged PR [#37](https://github.com/Poietes-ng/rezzidentEcosystem/pull/37) in [Poietes-ng/rezzidentEcosystem](https://github.com/Poietes-ng/rezzidentEcosystem)
 <!--END_SECTION:activity-->
 
 ---
