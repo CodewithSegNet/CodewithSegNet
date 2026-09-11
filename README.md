@@ -26,8 +26,6 @@ I build full-stack products end-to-end — from FastAPI/PostgreSQL backends to R
 
 ---
 
----
-
 ## 🛠️ What I Build & How I Build It
 
 **Backend Engineering**
