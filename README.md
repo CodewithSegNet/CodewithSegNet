@@ -21,6 +21,7 @@ I build full-stack products end-to-end — from FastAPI/PostgreSQL backends to R
 
 ## 🚀 Currently Building
 <!--START_SECTION:building-->
+- **[portfolio](https://github.com/CodewithSegNet/portfolio)** — Web Portfolio
 - **[Gems_Ore_Project](https://github.com/CodewithSegNet/Gems_Ore_Project)** — Shop extraordinary jewelry crafted for life's most precious moments
 <!--END_SECTION:building-->
 
