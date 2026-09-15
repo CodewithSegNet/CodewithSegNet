@@ -90,11 +90,11 @@
   <text class="stat-label" x="20" y="78">REPOS</text>
   <text class="stat-value" x="20" y="102">45</text>
   <text class="stat-label" x="116" y="78">STARS</text>
-  <text class="stat-value" x="116" y="102">2</text>
+  <text class="stat-value" x="116" y="102">3</text>
   <text class="stat-label" x="212" y="78">FOLLOWERS</text>
   <text class="stat-value" x="212" y="102">202</text>
   <text class="stat-label" x="308" y="78">STREAK</text>
-  <text class="streak-value" x="308" y="102">0d</text>
+  <text class="streak-value" x="308" y="102">1d</text>
   <text class="stat-label" x="404" y="78">BEST</text>
   <text class="streak-value" x="404" y="102">7d</text>
   <line x1="20" y1="120" x2="500" y2="120" stroke="#1a1a2e" stroke-width="1"/>
