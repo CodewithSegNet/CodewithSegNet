@@ -47,8 +47,8 @@ I build full-stack products end-to-end — from FastAPI/PostgreSQL backends to R
 
 ## 📅 Recent Activity
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#47](https://github.com/Poietes-ng/rezzidentEcosystem/pull/47) in [Poietes-ng/rezzidentEcosystem](https://github.com/Poietes-ng/rezzidentEcosystem)
-2. 💪 Opened PR [#47](https://github.com/Poietes-ng/rezzidentEcosystem/pull/47) in [Poietes-ng/rezzidentEcosystem](https://github.com/Poietes-ng/rezzidentEcosystem)
+1. ℹ️ Reopened PR [#35](https://github.com/Poietes-ng/rezzidentEcosystem/pull/35) in [Poietes-ng/rezzidentEcosystem](https://github.com/Poietes-ng/rezzidentEcosystem)
+2. ❌ Closed PR [#35](https://github.com/Poietes-ng/rezzidentEcosystem/pull/35) in [Poietes-ng/rezzidentEcosystem](https://github.com/Poietes-ng/rezzidentEcosystem)
 <!--END_SECTION:activity-->
 
 ---
