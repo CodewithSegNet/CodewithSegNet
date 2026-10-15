@@ -101,34 +101,34 @@
   <text class="section-title" x="20" y="140" filter="url(#glow)">&gt; TOP_LANGUAGES</text>
   <text class="lang-label" x="20" y="178">JavaScript</text>
   <rect class="bar-bg" x="130" y="168" width="330" height="12"/>
-  <rect x="130" y="168" width="229.1" height="12" fill="#00ff41" rx="3" ry="3" opacity="0.9"/>
-  <rect x="130" y="168" width="229.1" height="12" fill="#00ff41" rx="3" ry="3" opacity="0.25" filter="url(#glow)"/>
-  <text class="lang-pct" x="468" y="179">69.4%</text>
+  <rect x="130" y="168" width="229.7" height="12" fill="#00ff41" rx="3" ry="3" opacity="0.9"/>
+  <rect x="130" y="168" width="229.7" height="12" fill="#00ff41" rx="3" ry="3" opacity="0.25" filter="url(#glow)"/>
+  <text class="lang-pct" x="468" y="179">69.6%</text>
   <text class="lang-label" x="20" y="206">TypeScript</text>
   <rect class="bar-bg" x="130" y="196" width="330" height="12"/>
-  <rect x="130" y="196" width="35.7" height="12" fill="#00d4ff" rx="3" ry="3" opacity="0.9"/>
-  <rect x="130" y="196" width="35.7" height="12" fill="#00d4ff" rx="3" ry="3" opacity="0.25" filter="url(#glow)"/>
+  <rect x="130" y="196" width="35.5" height="12" fill="#00d4ff" rx="3" ry="3" opacity="0.9"/>
+  <rect x="130" y="196" width="35.5" height="12" fill="#00d4ff" rx="3" ry="3" opacity="0.25" filter="url(#glow)"/>
   <text class="lang-pct" x="468" y="207">10.8%</text>
   <text class="lang-label" x="20" y="234">Python</text>
   <rect class="bar-bg" x="130" y="224" width="330" height="12"/>
-  <rect x="130" y="224" width="29.8" height="12" fill="#f1e05a" rx="3" ry="3" opacity="0.9"/>
-  <rect x="130" y="224" width="29.8" height="12" fill="#f1e05a" rx="3" ry="3" opacity="0.25" filter="url(#glow)"/>
+  <rect x="130" y="224" width="29.7" height="12" fill="#f1e05a" rx="3" ry="3" opacity="0.9"/>
+  <rect x="130" y="224" width="29.7" height="12" fill="#f1e05a" rx="3" ry="3" opacity="0.25" filter="url(#glow)"/>
   <text class="lang-pct" x="468" y="235">9.0%</text>
   <text class="lang-label" x="20" y="262">CSS</text>
   <rect class="bar-bg" x="130" y="252" width="330" height="12"/>
-  <rect x="130" y="252" width="14.7" height="12" fill="#ff40ff" rx="3" ry="3" opacity="0.9"/>
-  <rect x="130" y="252" width="14.7" height="12" fill="#ff40ff" rx="3" ry="3" opacity="0.25" filter="url(#glow)"/>
-  <text class="lang-pct" x="468" y="263">4.5%</text>
+  <rect x="130" y="252" width="14.6" height="12" fill="#ff40ff" rx="3" ry="3" opacity="0.9"/>
+  <rect x="130" y="252" width="14.6" height="12" fill="#ff40ff" rx="3" ry="3" opacity="0.25" filter="url(#glow)"/>
+  <text class="lang-pct" x="468" y="263">4.4%</text>
   <text class="lang-label" x="20" y="290">HTML</text>
   <rect class="bar-bg" x="130" y="280" width="330" height="12"/>
-  <rect x="130" y="280" width="12.2" height="12" fill="#ff6e40" rx="3" ry="3" opacity="0.9"/>
-  <rect x="130" y="280" width="12.2" height="12" fill="#ff6e40" rx="3" ry="3" opacity="0.25" filter="url(#glow)"/>
+  <rect x="130" y="280" width="12.1" height="12" fill="#ff6e40" rx="3" ry="3" opacity="0.9"/>
+  <rect x="130" y="280" width="12.1" height="12" fill="#ff6e40" rx="3" ry="3" opacity="0.25" filter="url(#glow)"/>
   <text class="lang-pct" x="468" y="291">3.7%</text>
   <text class="lang-label" x="20" y="318">C</text>
   <rect class="bar-bg" x="130" y="308" width="330" height="12"/>
-  <rect x="130" y="308" width="8.5" height="12" fill="#ff4444" rx="3" ry="3" opacity="0.9"/>
-  <rect x="130" y="308" width="8.5" height="12" fill="#ff4444" rx="3" ry="3" opacity="0.25" filter="url(#glow)"/>
-  <text class="lang-pct" x="468" y="319">2.6%</text>
+  <rect x="130" y="308" width="8.4" height="12" fill="#ff4444" rx="3" ry="3" opacity="0.9"/>
+  <rect x="130" y="308" width="8.4" height="12" fill="#ff4444" rx="3" ry="3" opacity="0.25" filter="url(#glow)"/>
+  <text class="lang-pct" x="468" y="319">2.5%</text>
 
   <g opacity="0.2">
     <rect x="20" y="432" width="3" height="3" fill="#00ff41"/>
