@@ -92,7 +92,7 @@
   <text class="stat-label" x="116" y="78">STARS</text>
   <text class="stat-value" x="116" y="102">3</text>
   <text class="stat-label" x="212" y="78">FOLLOWERS</text>
-  <text class="stat-value" x="212" y="102">223</text>
+  <text class="stat-value" x="212" y="102">226</text>
   <text class="stat-label" x="308" y="78">STREAK</text>
   <text class="streak-value" x="308" y="102">0d</text>
   <text class="stat-label" x="404" y="78">BEST</text>
@@ -101,19 +101,19 @@
   <text class="section-title" x="20" y="140" filter="url(#glow)">&gt; TOP_LANGUAGES</text>
   <text class="lang-label" x="20" y="178">JavaScript</text>
   <rect class="bar-bg" x="130" y="168" width="330" height="12"/>
-  <rect x="130" y="168" width="229.2" height="12" fill="#00ff41" rx="3" ry="3" opacity="0.9"/>
-  <rect x="130" y="168" width="229.2" height="12" fill="#00ff41" rx="3" ry="3" opacity="0.25" filter="url(#glow)"/>
-  <text class="lang-pct" x="468" y="179">69.4%</text>
+  <rect x="130" y="168" width="229.4" height="12" fill="#00ff41" rx="3" ry="3" opacity="0.9"/>
+  <rect x="130" y="168" width="229.4" height="12" fill="#00ff41" rx="3" ry="3" opacity="0.25" filter="url(#glow)"/>
+  <text class="lang-pct" x="468" y="179">69.5%</text>
   <text class="lang-label" x="20" y="206">TypeScript</text>
   <rect class="bar-bg" x="130" y="196" width="330" height="12"/>
   <rect x="130" y="196" width="35.5" height="12" fill="#00d4ff" rx="3" ry="3" opacity="0.9"/>
   <rect x="130" y="196" width="35.5" height="12" fill="#00d4ff" rx="3" ry="3" opacity="0.25" filter="url(#glow)"/>
-  <text class="lang-pct" x="468" y="207">10.8%</text>
+  <text class="lang-pct" x="468" y="207">10.7%</text>
   <text class="lang-label" x="20" y="234">Python</text>
   <rect class="bar-bg" x="130" y="224" width="330" height="12"/>
-  <rect x="130" y="224" width="30.2" height="12" fill="#f1e05a" rx="3" ry="3" opacity="0.9"/>
-  <rect x="130" y="224" width="30.2" height="12" fill="#f1e05a" rx="3" ry="3" opacity="0.25" filter="url(#glow)"/>
-  <text class="lang-pct" x="468" y="235">9.2%</text>
+  <rect x="130" y="224" width="30.1" height="12" fill="#f1e05a" rx="3" ry="3" opacity="0.9"/>
+  <rect x="130" y="224" width="30.1" height="12" fill="#f1e05a" rx="3" ry="3" opacity="0.25" filter="url(#glow)"/>
+  <text class="lang-pct" x="468" y="235">9.1%</text>
   <text class="lang-label" x="20" y="262">CSS</text>
   <rect class="bar-bg" x="130" y="252" width="330" height="12"/>
   <rect x="130" y="252" width="14.6" height="12" fill="#ff40ff" rx="3" ry="3" opacity="0.9"/>
