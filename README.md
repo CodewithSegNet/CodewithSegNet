@@ -21,9 +21,9 @@ I build full-stack products end-to-end — from FastAPI/PostgreSQL backends to R
 
 ## 🚀 Currently Building
 <!--START_SECTION:building-->
+- **[ade-homes](https://github.com/CodewithSegNet/ade-homes)** — Real estate agency, property management, facility management and property development.
 - **[gems_be](https://github.com/CodewithSegNet/gems_be)** — A backend service for Gemsore
 - **[Gems_Ore_Project](https://github.com/CodewithSegNet/Gems_Ore_Project)** — Shop extraordinary jewelry crafted for life's most precious moments
-- **[ade-homes](https://github.com/CodewithSegNet/ade-homes)** — Real estate agency, property management, facility management and property development.
 - **[AftA-Project](https://github.com/CodewithSegNet/AftA-Project)** — Africa’s New Social Pulse From Lagos to Nairobi, connect with real people, real vibes, and real stories. AftA is the heartbeat of Africa’s online generation.
 <!--END_SECTION:building-->
 
