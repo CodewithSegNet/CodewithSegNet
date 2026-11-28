@@ -49,8 +49,8 @@ I build full-stack products end-to-end — from FastAPI/PostgreSQL backends to R
 
 ## 📅 Recent Activity
 <!--START_SECTION:activity-->
-1. ℹ️ Assigned issue [#112](https://github.com/Poietes-ng/rezzidentEcosystem/issues/112) in [Poietes-ng/rezzidentEcosystem](https://github.com/Poietes-ng/rezzidentEcosystem)
-2. ℹ️ Labeled issue [#112](https://github.com/Poietes-ng/rezzidentEcosystem/issues/112) in [Poietes-ng/rezzidentEcosystem](https://github.com/Poietes-ng/rezzidentEcosystem)
+1. ℹ️ Assigned issue [#99](https://github.com/Poietes-ng/rezzidentEcosystem/issues/99) in [Poietes-ng/rezzidentEcosystem](https://github.com/Poietes-ng/rezzidentEcosystem)
+2. ℹ️ Assigned issue [#112](https://github.com/Poietes-ng/rezzidentEcosystem/issues/112) in [Poietes-ng/rezzidentEcosystem](https://github.com/Poietes-ng/rezzidentEcosystem)
 <!--END_SECTION:activity-->
 
 ---
